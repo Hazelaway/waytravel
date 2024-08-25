@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Asegura que toda la barra de navegación permanezca en la parte superior */
+.navbar {
+  position: sticky;
+  top: 0; /* Se mantiene en la parte superior */
+  background-color: #000; /* Fondo negro */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado horizontal */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  width: 100%; /* Asegura que ocupe el 100% del ancho de la página */
+  z-index: 1000; /* Asegura que el navbar esté sobre otros contenidos */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Contenedor que alinea el logo y los enlaces */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Asegura que ocupe el 100% del ancho del navbar */
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  justify-content: space-between; /* Distribuye el espacio entre el logo y los enlaces */
+}
+
+/* Estilo para el enlace del logo */
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  margin-left: 0; /* Ajusta el margen para mover el logo más a la izquierda */
+}
+
+/* Ajusta el tamaño del logo */
+.navbar-logo {
+  height: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+/* Contenedor que centra los enlaces */
+.navbar-links-container {
+  display: flex;
+  flex-grow: 1; /* Permite que el contenedor de los enlaces ocupe el espacio restante */
+  justify-content: center; /* Centra los enlaces horizontalmente */
+}
+
+/* Estilos para la lista de enlaces */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 60px; /* Ajusta el espaciado entre los elementos del menú */
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilo para los elementos de la lista */
+.navbar-links li {
+  font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+  font-weight: 550; /* Establece el texto en negrita */
+  font-size: 18px; /* Aumenta el tamaño de la fuente */
+  cursor: pointer;
+  color: white; /* Asegura que el texto del menú sea blanco */
+}
+
+/* Oculta el menú de enlaces en móviles */
+@media (max-width: 768px) {
+  .navbar-links-container {
+    display: none; /* Oculta los enlaces en pantallas pequeñas */
+  }
+
+  .menu-hamburguesa {
+    display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+  }
+}
+
+/* Oculta el botón de menú hamburguesa en pantallas grandes */
+@media (min-width: 769px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+
+  

@@ -1,0 +1,49 @@
+/* Archivo: Home.css */
+
+/* Estilos para la sección de contenido */
+.content {
+  padding: 20px;
+  text-align: center;
+  margin-top: 0;
+  font-family: 'Lora', serif; /* Fuente base para el contenido */
+}
+
+/* Estilos para los encabezados */
+.content h1 {
+  font-family: 'Tangerine', cursive; /* Fuente para el título principal */
+  font-size: 2.5em; /* Tamaño de fuente para el encabezado principal */
+  margin-top: 0;
+  color: #000; /* Color del texto */
+  padding: 20px 0; /* Espaciado arriba y abajo del título */
+}
+
+/* Estilos para los párrafos */
+.content p {
+  margin-top: 30px; /* Espaciado arriba de cada párrafo */
+  font-size: 1.3em; /* Tamaño de fuente ligeramente mayor */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #333; /* Color del texto */
+  font-family: 'Lora', serif; /* Fuente para los párrafos */
+  padding: 10px 0; /* Espaciado arriba y abajo de los párrafos */
+}
+
+/* Estilos para la cita final */
+.content blockquote {
+  font-family: 'Tangerine', cursive; /* Fuente para la cita */
+  font-size: 3em; /* Tamaño de fuente para la cita */
+  font-style: italic; /* Cursiva para la cita */
+  color: #555; /* Color del texto de la cita */
+  border-left: 4px solid #000; /* Borde izquierdo estilizado */
+  padding-left: 20px; /* Espaciado dentro del bloque de cita */
+  margin-top: 50px; /* Espaciado arriba de la cita */
+  margin-bottom: 50px; /* Espaciado abajo de la cita */
+  line-height: 1.4; /* Espaciado entre líneas */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif; /* Fuente base para todo el sitio */
+}
+
+  

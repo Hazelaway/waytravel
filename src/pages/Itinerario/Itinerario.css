@@ -1,0 +1,80 @@
+/* Aplica el mismo estilo a .extra-content y a .folleto */
+.extra-content,
+.folleto {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.extra-content img,
+.folleto img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.folleto {
+  margin-bottom: 120px; /* Añade espacio abajo del componente */
+}
+
+.cita blockquote {
+  font-family: 'Tangerine', cursive; /* Fuente para la cita */
+  font-size: 3em; /* Tamaño de fuente para la cita */
+  font-style: italic; /* Cursiva para la cita */
+  color: #555; /* Color del texto de la cita */
+  border-left: 4px solid #000; /* Borde izquierdo estilizado */
+  padding-left: 20px; /* Espaciado dentro del bloque de cita */
+  margin-top: 50px; /* Espaciado arriba de la cita */
+  margin-bottom: 80px; /* Espaciado abajo de la cita */
+  line-height: 1.4; /* Espaciado entre líneas */
+  text-align: center;
+}
+
+/* Estilo del botón flotante */
+a {
+  text-decoration: none;
+}
+
+/* <main-style> ============================ */
+.scroll-up {
+  position: fixed; /* Fijo en la pantalla */
+  right: 3rem; /* Espacio desde el lado derecho */
+  bottom: 3rem; /* Espacio desde el fondo */
+  z-index: 10; /* Asegurarse de que esté encima de otros elementos */
+  width: 50px; /* Tamaño del botón */
+  height: 50px; /* Tamaño del botón */
+  border-radius: 50%; /* Botón circular */
+  background-color: rgba(29, 29, 31, 0.7); /* Color de fondo con transparencia */
+  backdrop-filter: saturate(180%) blur(20px); /* Filtro de desenfoque */
+  -webkit-backdrop-filter: saturate(180%) blur(20px); /* Filtro de desenfoque para WebKit */
+  display: flex; /* Flexbox para centrar el contenido */
+  align-items: center; /* Alineación vertical centrada */
+  justify-content: center; /* Alineación horizontal centrada */
+  overflow: hidden; /* Ocultar el contenido que se desborda */
+  transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+  border: none; /* Sin borde */
+}
+
+/* Efecto hover para cambiar el color de fondo y elevar el botón */
+.scroll-up:hover {
+  background-color: rgba(29, 29, 31, 0.9); /* Color más oscuro al pasar el mouse */
+  transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el mouse */
+}
+
+/* Estilo del ícono de la flecha hacia arriba */
+.scroll-up .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+@media (max-width: 1199.98px) {
+  .scroll-up {
+    right: 1rem; /* Ajustar para pantallas más pequeñas */
+    bottom: 1rem; /* Ajustar para pantallas más pequeñas */
+  }
+}
+
+
+

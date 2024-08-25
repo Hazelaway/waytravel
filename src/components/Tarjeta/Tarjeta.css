@@ -1,0 +1,81 @@
+/* src/components/Tarjeta.css */
+.card {
+    position: relative;
+    width: 300px; /* Tamaño de la tarjeta ajustado */
+    height: 400px; /* Tamaño de la tarjeta ajustado */
+    background: mediumturquoise; /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px auto; /* Centra la tarjeta horizontalmente y añade espacio alrededor */
+    overflow: hidden; /* Asegura que los efectos no se salgan del contenedor */
+  }
+  
+  .card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+    transition: transform 0.5s; /* Añade transición al efecto hover */
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+  }
+  
+  .card-text {
+    color: white; /* Color del texto */
+    font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+    font-weight: 700; /* Negrita */
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+  }
+  
+  /* Estilos para el efecto hover */
+  .card::before,
+  .card::after {
+    position: absolute;
+    content: "";
+    width: 20%; /* Empieza con el tamaño 0 */
+    height: 20%; /* Empieza con el tamaño 0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    transition: all 0.5s; /* Transición suave para el efecto hover */
+  }
+  
+  .card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+  }
+  
+  .card:hover::before,
+  .card:hover::after {
+    width: 100%; /* Expande a tamaño completo en hover */
+    height: 100%; /* Expande a tamaño completo en hover */
+    border-radius: 15px; /* Rouded corners on hover */
+    transition: all 0.5s; /* Transición suave para el efecto hover */
+  }
+  
+  .card:hover .card-image {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse por encima */
+  }
+  
+  
+  
+  
+  
+  

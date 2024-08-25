@@ -1,0 +1,45 @@
+/* src/components/Footer/Footer.css */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #fff; /* Igual grosor que la cabecera */
+    font-family: 'Raleway', sans-serif; /* Fuente Raleway */
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 100px; /* Aumenta el espacio entre los enlaces */
+    font-size: 16px; /* Tamaño de fuente para los enlaces */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .copyright {
+    margin-top: 20px; /* Espacio mayor entre el copyright y los enlaces */
+    font-size: 12px; /* Texto un poco menor que el resto */
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 10px; /* Ajusta el padding para móviles */
+    }
+  
+    .footer a {
+      display: block; /* Coloca cada enlace en una nueva línea */
+      margin: 10px 0; /* Espacio entre los enlaces en móviles */
+    }
+  
+    .footer .copyright {
+      margin-top: 20px; /* Espacio mayor entre el copyright y los enlaces */
+      font-size: 12px; /* Texto un poco menor que el resto */
+    }
+  }
+  
+  
+  
